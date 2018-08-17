@@ -1,0 +1,22 @@
+**Programs are written with following consideration: 
+1) Both Node (Tx) and Server (Rx) should be on same network (network gateway must be same, ex: 192.168.1.[2..255]), please check your router IP address.. 
+Note: please use same router to connect both the systems
+Resources: 
+	Hardware:
+	1) PC-> 2 (with windows operating system)
+	2) USB webcam/ Laptop Webcam ->1(On Node side) 
+
+	Software: (following resources used for testing code, but you can modify as per your system)
+	1) visual studio 2015 community (tested)
+	[https://visualstudio.microsoft.com/vs/older-downloads/]
+	2) OpenCV3.2(tested)
+	[https://opencv.org/opencv-3-2.html]
+
+Program Details: 
+Node Side (Tx-Transmitter): 
+1)	UDP_Node_Tx.h (windows socket lib and headers included)
+2)	UDP_Node_Tx.cpp (web cam access, data encoding, sending code)
+Server side (Rx- Receiver)
+1)	UDP_Server_Rx.h  (windows socket lib and headers included)
+2)	UDP_Server_Rx.cpp (data receive, data decoding and convert to Mat image buffer for display)
+
